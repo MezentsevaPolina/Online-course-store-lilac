@@ -1,0 +1,34 @@
+.contact_title{
+    margin-top: 8%;
+    margin-left: 100px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: normal;
+    color: #652f15;
+}
+
+.contact_title2{
+    margin-top: 20px;
+    margin-left: 100px;
+    line-height: 3;
+    letter-spacing: 2px;
+    color: #53117c;
+}
+
+.guide{
+    display: none;
+    margin-top: 20px;
+    margin-left: 100px;
+    line-height: 3;
+    letter-spacing: 2px;
+    color: #53117c;
+}
+.guide-show{
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+    line-height: 3;
+    letter-spacing: 2px;
+    color: #53117c;
+}
