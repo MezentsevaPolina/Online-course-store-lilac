@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from "./avatartest.bmp"
-import './user.css'
+import './styles/user.css'
+import '../components/styles/background.css'
 import {NavLink} from "react-router-dom";
 import {CERTIFICATE_ROUTE, FAVOURITES_ROUTE} from "../utils/consts";
 
@@ -19,15 +20,15 @@ const User = () => {
         <div className="radius"></div>
         <div className="describe__data">
             <label>Фамилия</label><br/>
-            <input type="text"/><br/>
+            <input className="the_input" type="text"/><br/>
             <label>Имя</label><br/>
-            <input type="text"/><br/>
+            <input className="the_input" type="text"/><br/>
             <label>Дата рождения</label><br/>
-            <input type="text"/><br/>
+            <input className="the_input" type="text"/><br/>
             <label>Телефон</label><br/>
-            <input type="text"/><br/>
+            <input className="the_input" type="text"/><br/>
             <label>Город</label><br/>
-            <input type="text"/><br/>
+            <input className="the_input" type="text"/><br/>
             <div>
                 <input type="radio" name="rb" id="rb1" checked/> <label htmlFor="rb1">Женский</label>
             </div>

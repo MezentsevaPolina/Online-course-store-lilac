@@ -9,8 +9,8 @@ const Login = () => {
         <p className="g_title2">войдите в систему или <NavLink to={REGISTRATION_ROUTE} className="registration">Загеристрируйтесь!</NavLink>
         </p>
         <div className="login-form">
-            <label>Логин:</label> <input type="text" /><br/>
-            <label>Пароль:</label> <input type="password" /><br/>
+            <label>Логин:</label> <input className="the_input" type="text" /><br/>
+            <label>Пароль:</label> <input className="the_input" type="password" /><br/>
         </div>
         <p style={{textAlign: "center"}}><NavLink to={USER_ROUTE} className="button__log">войти</NavLink></p>
     </>

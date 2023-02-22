@@ -41,17 +41,6 @@
     border-radius: 2px;
     margin-left: -40px;
 }
-.radius{
-    position: absolute;
-    right: 0;
-    top: 100px;
-    width: 50em;
-    height: 100em;
-    border: none;
-    border-radius: 100% 0 0 100% / 50% 0 0 50%;
-    background: rgba(218, 194, 255, 0.62);
-    z-index: -1;
-}
 .menu{
     position: absolute;
     right: 0;

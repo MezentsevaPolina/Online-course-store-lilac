@@ -26,7 +26,7 @@
     background-color: rgb(246, 240, 255);
 }
 
-input {
+.the_input {
     border: 4px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -37,14 +37,15 @@ input {
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     width: 250px;
     font-size: 17px;
+    margin: 10px;
 }
-input:hover{
+.the_input:hover{
     border-bottom-style: solid;
     border-bottom-color: #3a0b54;
     transition: 0.2s;
     cursor: pointer;
 }
-input:focus{
+.the_input:focus{
     border-style: none none solid none;
     border-bottom-color: #3a0b54;
 }

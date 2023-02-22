@@ -23,6 +23,7 @@
     line-height: 3;
     letter-spacing: 2px;
     color: #53117c;
+    transition: 0.5s;
 }
 .guide-show{
     display: block;
@@ -31,4 +32,11 @@
     line-height: 3;
     letter-spacing: 2px;
     color: #53117c;
+    opacity: 0;
+    animation: ani 1.5s forwards;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

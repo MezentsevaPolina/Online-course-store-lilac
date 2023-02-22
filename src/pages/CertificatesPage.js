@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 import {USER_ROUTE} from "../utils/consts";
-import "./certificate.css"
+import "./styles/certificate.css"
 import Certificate from "../components/Certificate";
 
 const CertificatesPage = () => {

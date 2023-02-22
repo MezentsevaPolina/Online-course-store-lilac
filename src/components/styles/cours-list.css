@@ -41,25 +41,3 @@
     /* margin: 0 auto; */
     margin-top: 25px;
 }
-.circle{
-    position: fixed;
-    left: 100px;
-    top: 100px;
-    width: 50em;
-    height: 50em;
-    border: none;
-    border-radius: 50%;
-    background: rgba(218, 194, 255, 0.62);
-    z-index: -1;
-}
-.pie{
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 50em;
-    height: 50em;
-    border: none;
-    border-radius: 0 0 0 100%;
-    background: rgba(218, 194, 255, 0.62);
-    z-index: -1;
-}

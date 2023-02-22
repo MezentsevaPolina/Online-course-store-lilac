@@ -1,6 +1,7 @@
 import React from 'react';
 import "../components/styles/contacts.css"
 import "../components/styles/login.css"
+import '../components/styles/background.css'
 
 const ContactPage = () => {
     function Results() {
