@@ -18,7 +18,7 @@ const Certificate = () => {
             <div className="cert__bottom">
                 <div className="cert__label">
                     Наименование сертификата
-                    <button className="cert__open">В избранное</button>
+                    <button className="cert__open">Открыть</button>
                 </div>
             </div>
         </div>

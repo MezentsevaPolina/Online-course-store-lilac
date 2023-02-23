@@ -1,5 +1,5 @@
 import React from 'react';
-import "../components/styles/contacts.css"
+import "./styles/contacts.css"
 import "../components/styles/login.css"
 import '../components/styles/background.css'
 
@@ -10,7 +10,7 @@ const ContactPage = () => {
 
     return <>
         <div className="contact_title">Наши контакты</div>
-        <div className="radius"></div>
+        <div className="pie" style={{borderRadius: "100% 0 0 0"}}></div>
         <div className="contact_title2">
             <label style={{fontWeight: "bold"}}>Разработка: </label><a href="https://github.com/MezentsevaPolina">Mezentseva Polina (github)</a><br/>
             <label style={{fontWeight: "bold"}}>Администрация: </label><a>+7 (ххх) ххх хх хх,</a> <a>(el.pochta@gmail.com)</a><br/>

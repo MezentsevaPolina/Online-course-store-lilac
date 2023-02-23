@@ -13,7 +13,7 @@ const Registration = () => {
             <label>Email: <input className="the_input" type="text"/> <font color="#8b0000">*</font></label> <br/>
             <label>Логин: <input className="the_input" type="text"/> <font color="#8b0000">*</font></label> <br/>
             <label>Пароль: <input className="the_input" type="password"/> <font color="#8b0000">*</font></label> <br/>
-            <label>Повторите пароль: <input type="text"/> <font color="#8b0000">*</font></label> <br/>
+            <label>Повторите пароль: <input className="the_input" type="password"/> <font color="#8b0000">*</font></label> <br/>
         </div>
         <p style={{textAlign: "center"}}><NavLink to={SHOP_ROUTE} className="button__log">зарегистрироваться</NavLink></p>
     </>

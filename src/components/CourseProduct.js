@@ -15,16 +15,17 @@ const CourseProduct = () => {
                     />
                 </a>
                 <div className="card__favor">
-                    <div id="heart" className="heart"></div>
+                    rate
                 </div>
 
-                <NavLink to={COURSE_ROUTE} className="card__label">Название курса cfeabjkbkjabcjkbab hahdbah</NavLink>
+                <NavLink to={COURSE_ROUTE} className="card__label">"Название курса"</NavLink>
             </div>
             <div className="card__bottom">
-                Краткое описание ljfwsjvjks jkshdjs hsijhsdjbv afhkhgoejhrpo fjkvjwsbh ghuregheruj uhgiughur
                 <div className="card__prices">
-                    <label className="card__price--common">Длительность - <label className="card__price--discount">6 месяцев</label></label><br/>
-                    <div className="card__price--common">Стоимость - <label className="card__price--discount">3000р в месяц</label></div>
+                    <label className="card__price--common">Длительность: </label><br/>
+                    <label className="card__price--discount">6 месяцев</label><br/>
+                    <label className="card__price--common">Стоимость:</label><br/>
+                    <label className="card__price--discount">3000р в месяц</label>
                 </div>
                 <button className="card__add">В избранное</button>
             </div>

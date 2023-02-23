@@ -120,10 +120,12 @@
 .back{
     text-decoration: none;
     position: absolute;
-    left: 50px;
+    left: 0;
     font-size: 22px;
     font-weight: bold;
-    color: rgba(86, 27, 124, 0.32);
+    padding: 10px 20px 10px 50px;
+    border-radius: 4px;
+    color: rgb(83, 17, 124);
     transition: 0.2s;
     height: 40px;
     text-transform: uppercase;
@@ -131,6 +133,6 @@
 .back:hover{
     cursor: pointer;
     color: white;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-    background-color: rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgb(194, 147, 255);
+    background-color: rgb(194, 147, 255);
 }

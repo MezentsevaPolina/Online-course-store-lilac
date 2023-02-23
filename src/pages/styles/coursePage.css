@@ -33,24 +33,37 @@
     background: linear-gradient(to right, rgba(183, 124, 255, 0.2), #b77cff 50%);
 }
 .crs_content_div{
-    margin: 70px 50px auto 50px;
+    margin: 70px 3% auto 3%;
     border-style: solid;
     border-color: #3a0b54;
     border-radius: 7px;
     background-color: rgba(239, 233, 255, 0.67);
     padding: 20px;
 }
+
+.crs_master_div{
+    margin: 100px 50% auto 3%;
+    border-radius: 7px;
+    background-color: rgba(183, 123, 255, 0.86);
+    padding: 20px;
+}
 .crs_content_div_price{
+    margin: 100px 40% auto 5%;
     border-style: none;
     border-radius: 7px;
     background-color: rgba(58, 11, 84, 0.14);
     padding: 20px;
 }
-.crs_master_div{
-    margin: 100px 30% auto 30%;
-    border-radius: 7px;
-    background-color: rgba(183, 123, 255, 0.86);
-    padding: 20px;
+.crs_price{
+    display: flex;
+    flex-direction: column;
+}
+.crs_content_price{
+    margin: 20px 0 20px auto;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .crs_content_text{
@@ -60,6 +73,7 @@
     letter-spacing: 1px;
     color: #53117c;
 }
+
 .count{
     padding: 5px;
     background-color: #53117c;
@@ -118,6 +132,7 @@ textarea {
 .bt_send{
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 20px;
     color: white;
     background-color: #53117c;
     padding: 20px;

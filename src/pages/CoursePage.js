@@ -4,6 +4,7 @@ import {SHOP_ROUTE} from "../utils/consts";
 import './styles/certificate.css'
 import {NavLink} from "react-router-dom"; //для кнопки Назад
 import MasterEx from "./example-certificate.jpg"
+import '../components/styles/background.css'
 
 const CoursePage = () => {
     function FavouriteClick() {
@@ -21,10 +22,18 @@ const CoursePage = () => {
         <div className="c_title2">Описание курса в общих чертах текст текст текст текст
             текст текст текст текст м м  текст текст текст текст
             текст текст текст текст  текст текст текст текст  текст текст текст текст </div>
+        <div className="crs_content_div_price">
+            <label className="c_title">Стоимость курса</label>
+            <div className="crs_price">
+                <label className="crs_content_price" style={{color: "#36005b"}}>"цена в месяц"</label>
+                <label className="crs_content_price" style={{ color: "#de000d"}}>"цена за весь курс"</label>
+            </div>
+            <button className="bt_send">Записаться</button>
+        </div>
         <div className="crs_content_div">
             <h1 style={{color: "rgb(58, 11, 84)"}}>Содержание курса</h1>
             <label className="crs_content_text">Видеоуроки: <label className="count">5</label></label>
-            <label className="crs_content_text">Чек-листы*: <label className="count">10</label></label>  <br/>
+            <label className="crs_content_text">Чек-листы*: <label className="count">10</label></label>
             <label className="crs_content_text">Мастер-классы: <label className="count">нет</label></label>
             <h1 style={{color: "rgb(58, 11, 84)"}}>Чему вы научитесь</h1>
             <ol role="list">
@@ -46,13 +55,11 @@ const CoursePage = () => {
             <h1 style={{color: "white"}}>Связаться со специалистом и получить бесплатную консультацию:</h1>
             <input className="the_input" type="text" placeholder="Имя"/> <br/>
             <input className="the_input" type="text" placeholder="Ваша Эл. почта"/> <br/>
-            <textarea className="the_input" placeholder="Задайте вопрос" rows="5" cols="80" style={{width: "500px"}}>
+            <textarea className="the_input" placeholder="Задайте вопрос" rows="5" cols="80" style={{width: "90%"}}>
             </textarea> <br/>
             <button className="bt_send" onClick={SendMessage}>Отправить</button>
         </div>
-        <div className="crs_content_div_price">
-            <h2 className="crs_content_title">Стоимость курса</h2>
-        </div>
+
     </>
 };
 

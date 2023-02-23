@@ -2,7 +2,7 @@
     width: 225px;
     min-height: 350px;
     box-shadow: 1px 2px 4px rgba(86, 27, 124, 0.32);
-    background-color: rgba(234, 228, 255, 0.37);
+    background-color: rgba(146, 120, 255, 0.37);
     display: flex;
     flex-direction: column; /* Размещаем элементы в колонку */
     border-radius: 4px;
@@ -15,7 +15,7 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
-    font-size: 18px;
+    font-size: 22px;
     color: #3a0b54;
     text-decoration: none;
     font-weight: bold;
@@ -29,41 +29,6 @@
 .card:hover {
     box-shadow: 4px 8px 16px rgb(183, 124, 255);
 }
-/*сердечко*/
-.heart {
-    position: relative;
-    width: 15px;
-    height: 26px;
-    background-color: #fdb7b7;
-    box-shadow: -1px 0px 2px #444;
-    -webkit-border-radius: 50px 50px 0 0;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    /* Определяем угол наклона */
-    -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
-    -ms-transform: rotate(315deg);
-    -o-transform: rotate(315deg);
-    transform: rotate(315deg);
-}
-/* Формируем правую часть */
-.heart:before {
-    position: absolute;
-    width: 26px;
-    height: 15px;
-    left: 0;
-    bottom: 0;
-    content: "";
-    background-color: #fdb7b7;
-    box-shadow: 0px 3px 3px #444444;
-    -webkit-border-radius: 50px 50px 0 0;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 0 50px 50px 0;
-}
-/* Убираем тень при наведении */
-.heart:hover:before, .heart:hover{
-    box-shadow:none;
-}
 .card__favor{
     position: absolute;
     top: 10px;
@@ -71,38 +36,8 @@
     height: 25px;
     width: 25px;
 }
-.heart__active{
-    position: relative;
-    width: 15px;
-    height: 26px;
-    background-color: #850808;
-    box-shadow: -1px 0px 2px #444;
-    -webkit-border-radius: 50px 50px 0 0;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 50px 50px 0 0;
-    /* Определяем угол наклона */
-    -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
-    -ms-transform: rotate(315deg);
-    -o-transform: rotate(315deg);
-    transform: rotate(315deg);
-}
-.heart__active:before {
-    position: absolute;
-    width: 26px;
-    height: 15px;
-    left: 0;
-    bottom: 0;
-    content: "";
-    background-color: #850808;
-    box-shadow: 0px 3px 3px #444444;
-    -webkit-border-radius: 50px 50px 0 0;
-    -moz-border-radius: 50px 50px 0 0;
-    border-radius: 0 50px 50px 0;
-}
-
 .card__top {
-    flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+    flex: 0 0 180px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
     position: relative;
     overflow: hidden; /* Скрываем, что выходит за пределы */
 }
@@ -113,15 +48,14 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 225px;
+    height: 220px;
 }
 
 .card__image > img {
     width: 100%;
     height: 100%;
     object-fit: contain; /* Встраиваем картинку в контейнер card__image */
-    transition: 0.2s;
     border-radius: 4px;
 }
 
@@ -133,18 +67,17 @@
 }
 
 .card__prices {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 .card__price--common {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 18px;
     color: #606060;
 }
 
 .card__price--discount {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     color: #414141;
 }
 
