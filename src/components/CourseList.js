@@ -1,26 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import "../components/styles/cours-list.css"
 import CourseNav from "./CourseNav";
 import CourseProduct from "./CourseProduct";
+import {observer} from "mobx-react-lite";
+import {Context} from "../index";
 
-const CourseList = () => {
+const CourseList = observer(() => {
+    const {course} = useContext(Context)
     return <>
         <CourseNav/>
         <div className="cards">
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
-            <CourseProduct/>
+            {course.courses.map(course =>
+                    <CourseProduct key={course.id} course={course}/>
+            )}
         </div>
     </>
-};
+});
 
 export default CourseList;

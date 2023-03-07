@@ -30,11 +30,18 @@
     box-shadow: 4px 8px 16px rgb(183, 124, 255);
 }
 .card__favor{
+    display: flex;
     position: absolute;
+    align-items: center;
     top: 10px;
-    right: 10px;
-    height: 25px;
-    width: 25px;
+    right: 20px;
+    color: #3a0b54;
+    font-weight: bold;
+}
+.star_img{
+    height: 20px;
+    width: 20px;
+    padding-left: 3px;
 }
 .card__top {
     flex: 0 0 180px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */

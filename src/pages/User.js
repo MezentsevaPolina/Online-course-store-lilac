@@ -3,7 +3,7 @@ import Avatar from "./avatartest.bmp"
 import './styles/user.css'
 import '../components/styles/background.css'
 import {NavLink} from "react-router-dom";
-import {CERTIFICATE_ROUTE, FAVOURITES_ROUTE} from "../utils/consts";
+import {CERTIFICATE_ROUTE, FAVOURITES_ROUTE, MASTER_ROUTE} from "../utils/consts";
 
 const User = () => {
     function saveData() {
@@ -17,7 +17,7 @@ const User = () => {
         <div className="fio__div">
             <img className="avatar" src={Avatar}/><a>Фамилия Имя</a>
         </div>
-        <div className="radius"></div>
+        <div className="radius" style={{position: "fixed"}}></div>
         <div className="describe__data">
             <label>Фамилия</label><br/>
             <input className="the_input" type="text"/><br/>
@@ -49,7 +49,7 @@ const User = () => {
             <p className="menu__btn"><NavLink to={CERTIFICATE_ROUTE} >Сертификаты</NavLink></p><br/>
             <p className="menu__btn"><NavLink to="/" >Все вебинары</NavLink></p><br/>
             <p className="menu__btn"><NavLink to="/" >Чек-листы</NavLink></p><br/>
-            <p className="menu__btn"><NavLink to="/" >Мои курсы</NavLink></p><br/>
+            <p className="menu__btn"><NavLink to={MASTER_ROUTE}>Создать свой курс</NavLink></p><br/>
         </div>
     </>
 };
