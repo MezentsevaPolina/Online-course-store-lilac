@@ -9,6 +9,8 @@ import {observer} from "mobx-react-lite";
 
 const Header = observer(() => {
     const {user} = useContext(Context)
+    const {course} = useContext(Context)
+
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
@@ -21,7 +23,6 @@ const Header = observer(() => {
             }
         }
     }
-    const {course} = useContext(Context)
     return (
         <div className="header">
                 <div className="header__preview">

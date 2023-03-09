@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Avatar from "./avatartest.bmp"
 import './styles/user.css'
 import '../components/styles/background.css'
 import {NavLink} from "react-router-dom";
-import {CERTIFICATE_ROUTE, FAVOURITES_ROUTE, MASTER_ROUTE} from "../utils/consts";
+import {CERTIFICATE_ROUTE, FAVOURITES_ROUTE, MASTER_ROUTE, SHOP_ROUTE} from "../utils/consts";
+import {Context} from "../index";
 
 const User = () => {
+    const {user} = useContext(Context)
     function saveData() {
         alert("Поздравляем! Данные не сохранены!");
+    }
+    const logOut = () => {
+        user.setUser({})
+        user.setIsAuth(false)
     }
 
     return <>
@@ -15,7 +21,7 @@ const User = () => {
             <a className="user__title">Личный кабинет</a>
         </div>
         <div className="fio__div">
-            <img className="avatar" src={Avatar}/><a>Фамилия Имя</a>
+            <img className="avatar" src={Avatar}/><a>Имя Фамилия</a>
         </div>
         <div className="radius" style={{position: "fixed"}}></div>
         <div className="describe__data">
@@ -50,6 +56,7 @@ const User = () => {
             <p className="menu__btn"><NavLink to="/" >Все вебинары</NavLink></p><br/>
             <p className="menu__btn"><NavLink to="/" >Чек-листы</NavLink></p><br/>
             <p className="menu__btn"><NavLink to={MASTER_ROUTE}>Создать свой курс</NavLink></p><br/>
+            <p className="menu__btn"><NavLink to={SHOP_ROUTE} onClick={() => logOut()}>Выйти</NavLink></p><br/>
         </div>
     </>
 };

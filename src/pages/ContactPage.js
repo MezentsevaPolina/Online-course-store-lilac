@@ -19,8 +19,8 @@ const ContactPage = () => {
             <label style={{fontWeight: "bold"}}>Telegram: </label><a href="">ссылка на несозданный канал</a> <br/>
             <button onClick={Results} id="dangeon_master" className="button__log">Хочу стать мастером!</button><br/>
         <div className="guide" id="show">
-            Отправь свою анкету, пока непонятно какую, на почту администратора (el.pochta@gmail.com) <br/>
-            и прими участие в онлайн-собеседовании. Хрен знает, нужно ли оно, анкеты достаточно
+            Отправь свою анкету, (анкета скорей всего будет прилагаться здесь в виде гугл-формы), на почту администратора (el.pochta@gmail.com) <br/>
+            и прими участие в онлайн-собеседовании.
         </div>
         </div>
     </>
