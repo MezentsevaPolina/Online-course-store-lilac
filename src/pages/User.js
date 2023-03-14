@@ -21,14 +21,14 @@ const User = () => {
             <a className="user__title">Личный кабинет</a>
         </div>
         <div className="fio__div">
-            <img className="avatar" src={Avatar}/><a>Имя Фамилия</a>
+            <img className="avatar" src={Avatar}/><a>Фамилия Имя</a>
         </div>
         <div className="radius" style={{position: "fixed"}}></div>
         <div className="describe__data">
             <label>Фамилия</label><br/>
-            <input className="the_input" type="text"/><br/>
+            <input className="the_input" type="text" value="фамилия"/><br/>
             <label>Имя</label><br/>
-            <input className="the_input" type="text"/><br/>
+            <input className="the_input" type="text" value="имя"/><br/>
             <label>Дата рождения</label><br/>
             <input className="the_input" type="text"/><br/>
             <label>Телефон</label><br/>

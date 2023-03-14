@@ -43,9 +43,13 @@ export const authRoutes = [ //страницы только для автори�
     {
         path: CREATING_WRITE_ROUTE,
         Component: CreatingWrite
+    },
+    {
+        path: CERTIFICATE_ROUTE,
+        Component: CertificatesPage
     }
 ]
-export const adminRoutes = [ //страницы только для авторизированного пользователя
+export const adminRoutes = [ //страницы для админа
     {
         path: ADMIN_ROUTE,
         Component: AdminPanel
@@ -84,13 +88,5 @@ export const publicRoutes = [ //страницы для всех
     {
         path: CONTACT_ROUTE,
         Component: ContactPage
-    },
-    {
-        path: USER_ROUTE,
-        Component: User
-    },
-    {
-        path: CERTIFICATE_ROUTE,
-        Component: CertificatesPage
     }
 ]

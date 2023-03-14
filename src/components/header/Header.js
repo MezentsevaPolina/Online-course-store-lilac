@@ -45,7 +45,7 @@ const Header = observer(() => {
                     </div>
                     <NavLink to={CONTACT_ROUTE} className="butheader">Контакты</NavLink>
                     {user.isAuth ?
-                        <NavLink to={USER_ROUTE} className="butheader">"Ава"</NavLink>
+                        <NavLink to={USER_ROUTE} className="butheader">Личный кабинет</NavLink>
                         :
                         <NavLink to={LOGIN_ROUTE} className="butheader">Войти</NavLink>
                     }
